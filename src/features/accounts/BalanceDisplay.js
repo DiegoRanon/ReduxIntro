@@ -9,4 +9,10 @@ function BalanceDisplay() {
   return <div className="balance">{formatCurrency(123456)}</div>;
 }
 
+function mapStateToProps(state) {
+  return {
+    balance: state.account.balance,
+  };
+}
+
 export default BalanceDisplay;
